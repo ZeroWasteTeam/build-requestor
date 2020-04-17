@@ -1,0 +1,25 @@
+{
+  "name": "build-requestor",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "npx ncc build index.js -o dist",
+    "babel": "babel --presets es2015 index.js -o dist/index.bundle.js",
+    "start": "http-server",
+    "webpack": "webpack"
+  },
+  "author": "Nachiappan NK",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.1",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
